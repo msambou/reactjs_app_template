@@ -24,9 +24,32 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>App Template</title>
+
+    <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/assets/vendor/themify-icons/themify-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/assets/vendor/fontawesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/assets/vendor/charts-c3/plugin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/assets/vendor/jvectormap/jquery-jvectormap-2.0.3.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/assets/css/main.css"
+      type="text/css"
+    />
   </head>
-  <body>
+  <body class="theme-blue">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +62,20 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!-- Core -->
+    <script src="%PUBLIC_URL%/assets/bundles/libscripts.bundle.js"></script>
+    <script src="%PUBLIC_URL%/assets/bundles/vendorscripts.bundle.js"></script>
+
+    <script src="%PUBLIC_URL%/assets/vendor/jquery-sparkline/js/jquery.sparkline.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/vendor/echart/echarts.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/bundles/c3.bundle.js"></script>
+    <script src="%PUBLIC_URL%/assets/bundles/jvectormap.bundle.js"></script>
+    <!-- JVectorMap Plugin Js -->
+
+    <!-- Theme JS -->
+    <script src="%PUBLIC_URL%/assets/js/theme.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/pages/index.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/pages/todo-js.js"></script>
   </body>
 </html>
